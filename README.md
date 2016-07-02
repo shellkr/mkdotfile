@@ -19,7 +19,7 @@ init, push, restore, tree, track and untrack
 
 3.) Start tracking files with 'mkdotfile track /path/to/file'
 
-4.) To send changes run 'git push' and follow instructions.
+4.) To send changes run 'mkdotfile push' and follow instructions.
 
 
 If you wish to untrack a file then run 'mkdotfile untrack /path/to/file' make sure this is the same path you first used to track the file. In other words the symlink.
