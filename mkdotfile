@@ -88,7 +88,7 @@ echo "untrack_file: $untrack_file"
 dot_restore() {
         chk_init
 
-        printf "This should be the symlink not the path of the actual file\n"
+#        printf "This should be the real path of the actual file\n"
         read -ep "Enter full path of file you wish to restore: " remote_file
         read -ep "Enter full path to where you want to restore it: " restore_file
 
