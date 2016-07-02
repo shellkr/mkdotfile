@@ -15,13 +15,17 @@ init, push, restore, tree, track and untrack
 
 1.) Go to your Git service providers web client (like GitHub) and create a new empty repo
 
-2.) Run 'mkdotfile init' and insert the git repo and name of local dotfile directory
+2.) Run 'mkdotfile init' and insert the url of your git repo and name of local dotfile directory
 
 3.) Start tracking files with 'mkdotfile track /path/to/file'
 
+4.) To send changes run 'git push' and follow instructions.
+
+
 If you wish to untrack a file then run 'mkdotfile untrack /path/to/file' make sure this is the same path you first used to track the file. In other words the symlink.
 
-If you intend to use the same dotfiles on another machine. You should run:
+
+If you intend to use the same dotfiles on another machine. You should on that machine run:
 
 1.) 'mkdotfile init'
 
