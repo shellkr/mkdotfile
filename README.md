@@ -21,15 +21,15 @@ init, push, restore, tree, track and untrack
 
 Run `mkdotfile untrack /path/to/file` if you wish to untrack a file. Make sure this is the same path you first used to track the file. In other words the symlink.
 
-    This will track xinitrc:
+    # This will track xinitrc:
     $ mkdotfile track .xinitrc
 
     $ mkdotfile tree
       /home/pelle/.dotfiles/dotfiles
-        |--[Jun 10 12:13] README.md
+	|--[Jun 10 12:13] README.md
 	|--[Jun 13 17:20] .xinitrc
 
-    This will later untrack it:
+    # This will later untrack it:
     $ mkdotfile untrack .xinitrc
 
 If you intend to use the same dotfiles on another machine. You should on that machine run:
