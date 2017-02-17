@@ -11,7 +11,7 @@ mkdotfile intend to make managing dotfiles on your system simpler and more autom
 
 init, push, restore, tree, track and untrack
 
-#### Usage
+#### Usage:
 
 1. Go to your Git service providers web client (like GitHub) and create a new empty repo
 2. Run `mkdotfile init` and insert the url of your git repo and name of local dotfile directory
@@ -21,15 +21,15 @@ init, push, restore, tree, track and untrack
 
 Run `mkdotfile untrack /path/to/file` if you wish to untrack a file. Make sure this is the same path you first used to track the file. In other words the symlink.
 
-#### Example
+#### Example:
 
     # This will track xinitrc:
     $ mkdotfile track .xinitrc
 
     $ mkdotfile tree
-      /home/pelle/.dotfiles/dotfiles
-        |--[Jun 10 12:13] README.md
-        |--[Jun 13 17:20] .xinitrc
+    /home/pelle/.dotfiles/dotfiles
+       |--[Jun 10 12:13] README.md
+       |--[Jun 13 17:20] .xinitrc
 
     # This will later untrack it:
     $ mkdotfile untrack .xinitrc

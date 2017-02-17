@@ -104,9 +104,9 @@ show_tree() {
 	chk_init
 
         [[ -n "$2" ]] && {
-                tree -DF "$2"
+                tree -DFCla -I "*.git|*.nanorc" "$2"
         } || {
-		tree -DF "${dotfile_home}"
+		tree -DFla "${dotfile_home}"
         }
 
 }
@@ -118,17 +118,15 @@ git_push() {
 	git add -A
 	git status
 	echo
-	read -p "Enter your commit message: " git_commit
-
+	read -ep "Enter your commit message: " git_commit
 	git commit -m "$git_commit"
 	git push
-	break
 }
 
 while true;
 do
 	case $1 in
-		push)	 git_push ;;
+		push)	 git_push; break ;;
 		init)	 git_init ;;
 		track)	 dot_track "$@"; break ;;
 		untrack) dot_untrack "$@"; break ;;
